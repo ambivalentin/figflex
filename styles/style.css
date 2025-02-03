@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     justify-content:center;
     margin: 98px 90px 98px 90px;
+    position: relative;
 }
 
 .box{
@@ -16,7 +17,22 @@
     width: 468px;
     background-color: #F48C06;
     border-radius: 8px;
-    padding: 20px;
-    margin:20px
+    justify-content: center;
+    margin:20px 20px 20px 20px;
+}
+
+.one {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 40px;
+}
+
+.sq1 {
+    height: 85px;
+    width: 85px;
+    background-color: #9D0208;
+    border-radius: 5px;
     
 }
+
