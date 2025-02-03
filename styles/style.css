@@ -1,0 +1,22 @@
+.body, html {
+    background-color: #370617;
+}
+
+.container {
+    /* can't seem to figure out proper method of aligning
+    boxes according to example */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 98px 90px 98px 90px;
+}
+
+.box{
+    height: 160px;
+    width: 468px;
+    background-color: #F48C06;
+    border-radius: 8px;
+    padding: 20px;
+    margin:20px
+    
+}
