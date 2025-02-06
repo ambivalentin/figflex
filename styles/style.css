@@ -1,240 +1,214 @@
-.body, html {
-    background-color: #370617;
+body {
+  background-color: #370617;
 }
 
 .container {
-    /* can't seem to figure out proper method of aligning
-    boxes according to example 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    margin: 98px 90px 98px 90px;
-    position: relative; */
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #370617;
+  min-height: 100vh;
+  max-width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #370617;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10%;
 }
-
-.box-one{
-    /* height: 160px;
-    width: 468px;
-    background-color: #F48C06;
-    border-radius: 8px;
-    justify-content: center;
-    margin:20px 20px 20px 20px; */
-    width: 468px;
-    height: 160px;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: inline;
-    justify-content: space-around;
-    align-items: flex-end;
-    background-color: #F48C06;
-    border-radius: 5px;
+/* Nearly identical copy with minor
+    difference of alignment between boxes in #2 & #4 */
+.box-one {
+  width: 468px;
+  height: 160px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-color: #f48c06;
+  border-radius: 5px;
 }
-
-/*
-.one {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 40px;
-}
-*/
 
 .box-one__sq {
-    height: 85px;
-    width: 85px;
-    background-color: #9D0208;
-    border-radius: 5px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    
+  height: 85px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
-.box-two{
-    /* height: 160px;
-    width: 468px;
-    background-color: #F48C06;
-    border-radius: 8px;
-    justify-content: center;
-    margin:20px 20px 20px 20px; */
-    width: 468px;
-    height: 160px;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: inline;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: #F48C06;
-    border-radius: 5px;
+.box-two {
+  width: 468px;
+  height: 160px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #f48c06;
+  border-radius: 5px;
 }
 
-/*
-.one {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 40px;
+.box-two-sub {
+  display: flex;
+  margin: 0 20px;
+  gap: 20px;
 }
-*/
 
 .box-two__sq {
-    height: 85px;
-    width: 85px;
-    background-color: #9D0208;
-    border-radius: 5px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    
+  height: 125px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin: auto;
 }
 
 .box-three {
-    /* height: 160px;
-    width: 468px;
-    background-color: #F48C06;
-    border-radius: 8px;
-    justify-content: center;
-    margin:20px 20px 20px 20px; */
-    width: 468px;
-    height: 160px;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: inline;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: #F48C06;
-    border-radius: 5px;
+  width: 468px;
+  height: 160px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f48c06;
+  border-radius: 5px;
 }
 
-/*
-.one {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 40px;
+.box-three-sub {
+  margin: 20px 20px;
+  display: flex;
+  gap: 20px;
 }
-*/
 
 .box-three__sq {
-    height: 85px;
-    width: 85px;
-    background-color: #9D0208;
-    border-radius: 5px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    
+  height: 85px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin: auto;
 }
 
 .box-four {
-    /* height: 160px;
-    width: 468px;
-    background-color: #F48C06;
-    border-radius: 8px;
-    justify-content: center;
-    margin:20px 20px 20px 20px; */
-    width: 468px;
-    height: 160px;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: inline;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: #F48C06;
-    border-radius: 5px;
+  width: 468px;
+  height: 160px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f48c06;
+  border-radius: 5px;
 }
 
-/*
-.one {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 40px;
+.box-four__sq_first {
+  height: 85px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
-*/
 
-.box-four__sq {
-    height: 85px;
-    width: 85px;
-    background-color: #9D0208;
-    border-radius: 5px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    
+.box-four__sq_middle {
+  height: 85px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.box-four__sq_last {
+  height: 85px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+  align-self: center;
 }
 
 .box-five {
-    /* height: 160px;
-    width: 468px;
-    background-color: #F48C06;
-    border-radius: 8px;
-    justify-content: center;
-    margin:20px 20px 20px 20px; */
-    width: 468px;
-    height: 160px;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: inline;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: #F48C06;
-    border-radius: 5px;
+  width: 468px;
+  height: 160px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f48c06;
+  border-radius: 5px;
+  text-align: center;
 }
 
-/*
-.one {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 40px;
+p {
+  color: white;
+  font-family: "Roboto", serif;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 5px;
 }
-*/
 
-.box-five__sq {
-    height: 85px;
-    width: 85px;
-    background-color: #9D0208;
-    border-radius: 5px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    
+.box-five__sq_one {
+  height: 115px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.box-five__sq_two {
+  height: 70px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.box-five__sq_three {
+  height: 115px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin: auto;
 }
 
 .box-six {
-    /* height: 160px;
-    width: 468px;
-    background-color: #F48C06;
-    border-radius: 8px;
-    justify-content: center;
-    margin:20px 20px 20px 20px; */
-    width: 468px;
-    height: 160px;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: inline;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: #F48C06;
-    border-radius: 5px;
+  width: 468px;
+  height: 160px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #f48c06;
+  border-radius: 5px;
 }
 
-/*
-.one {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 40px;
+.box-six__sq_first {
+  height: 85px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-*/
 
-.box-six__sq {
-    height: 85px;
-    width: 85px;
-    background-color: #9D0208;
-    border-radius: 5px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    
+.box-six__sq_wide {
+  height: 85px;
+  width: 165px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.box-six__sq_last {
+  height: 85px;
+  width: 85px;
+  background-color: #9d0208;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
